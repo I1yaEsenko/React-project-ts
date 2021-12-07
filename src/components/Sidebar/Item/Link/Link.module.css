@@ -1,8 +1,8 @@
-.item__item{
+.item{
     position: relative;
     line-height: 30px;
 }
-.item__icon{
+.icon{
     position: absolute;
     content: '';
     width: 20px;
@@ -12,9 +12,8 @@
     border-radius: 20px;
     background-color: green;
 }
-.item__link{
+.link{
     color: black;
     text-decoration: none;
     padding-left: 30px;
-
 }

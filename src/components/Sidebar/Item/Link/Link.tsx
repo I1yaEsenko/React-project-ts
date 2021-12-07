@@ -1,12 +1,28 @@
 import React from "react";
 import ln from './Link.module.css';
+import {ArrayMenu} from "../Item";
+import it from "../Item.module.css";
 
-const Link = () => {
+type SidebarLinkPropsType = {
+  links: Array<ArrayMenu>
+}
+
+const Link = (props: SidebarLinkPropsType) => {
   return (
-        <li className={ln.item__item}>
-          <span className={ln.item__icon}></span>
-          <a className={ln.item__link} href='#'>Email Box</a>
-        </li>
+    <ul className={it.menu}>
+      <li className={ln.item}>
+        <span className={ln.icon}></span>
+        <a className={ln.link} href='#'>{props.links[0].linkTitle}</a>
+      </li>
+      <li className={ln.item}>
+        <span className={ln.icon}></span>
+        <a className={ln.link} href='#'>{props.links[1].linkTitle}</a>
+      </li>
+      <li className={ln.item}>
+        <span className={ln.icon}></span>
+        <a className={ln.link} href='#'>{props.links[2].linkTitle}</a>
+      </li>
+    </ul>
   );
 }
 

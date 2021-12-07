@@ -1,12 +1,14 @@
 .app-wrapper{
     min-height: 100vh;
+    display: grid;
+    grid-template: minmax(70px, auto) 1fr minmax(70px, auto)/  minmax(280px, auto) 8fr minmax(280px, auto);
+    grid-template-areas:
+  'header header header'
+  'sidebar profile contacts'
+  'footer footer footer';
+}
+
+.container {
     width: 1200px;
     margin: 0 auto;
-    padding: 10px;
-    display: grid;
-    grid-template: minmax(70px, auto) 1fr minmax(70px, auto)/  2fr 10fr;
-    grid-template-areas:
-  'header header'
-  'sidebar profile'
-  'footer footer';
 }
