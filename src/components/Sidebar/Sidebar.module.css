@@ -1,0 +1,9 @@
+/*Left sidebar*/
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #e5e2e2;
+    border-radius: 20px;
+    margin: 0 10px 0 0;
+}
+

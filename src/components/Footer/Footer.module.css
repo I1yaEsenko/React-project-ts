@@ -1,0 +1,22 @@
+.footer{
+    grid-area: footer;
+    background-color: #e8e8e8;
+    margin: 10px 0 0 0 ;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 12px;
+    /*&__title{*/
+
+    /*}*/
+    /*&__text{*/
+
+    /*}*/
+}
+
+.footer__title{
+
+}
+
+.footer__text{}
