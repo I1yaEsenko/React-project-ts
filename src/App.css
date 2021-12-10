@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
 .app-wrapper{
     min-height: 100vh;
     display: grid;
     grid-template: minmax(70px, auto) 1fr minmax(70px, auto)/  minmax(280px, auto) 8fr minmax(280px, auto);
     grid-template-areas:
   'header header header'
-  'sidebar profile contacts'
+  'sidebar mainbody contacts'
   'footer footer footer';
+    background-color: #fdfcfc;
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.05);
+    padding: 10px;
+    grid-area: mainbody;
 }

@@ -8,7 +8,7 @@ import Account from "./Account/Account";
 const Sidebar = () => {
   return (
     <aside className={sb.sidebar}>
-      <Feeds title={'New Account'}/>
+      <Feeds title={'New Feeds'}/>
       <Pages title={'More Pages'}/>
       <Account title={'Account'}/>
     </aside>

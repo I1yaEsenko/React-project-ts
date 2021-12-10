@@ -1,8 +1,6 @@
 /*Left sidebar*/
 
 .sidebar{
-    border: 1px solid blue;
     grid-area: sidebar;
-    background-color: #f5f5f5;
 }
 

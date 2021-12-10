@@ -1,13 +1,13 @@
 .footer {
     grid-area: footer;
-    background-color: #e8e8e8;
     margin: 10px 0 0 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.03);
+    background-color: #fff;
     display: grid;
     justify-items: center;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
-    border: 1px solid black;
 }
 .footer__title{
 

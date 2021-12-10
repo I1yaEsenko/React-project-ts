@@ -9,7 +9,7 @@ type SidebarLinkPropsType = {
 
 const Link = (props: SidebarLinkPropsType) => {
   return (
-    <ul className={it.menu}>
+    <ul className={ln.menu}>
       <li className={ln.item}>
         <span className={ln.icon}></span>
         <a className={ln.link} href='#'>{props.links[0].linkTitle}</a>
