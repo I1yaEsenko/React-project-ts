@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 
+
 .app-wrapper{
     min-height: 100vh;
     display: grid;
@@ -18,4 +19,81 @@
     box-shadow: 0 8px 30px rgba(0,0,0,.05);
     padding: 10px;
     grid-area: mainbody;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?pmpvgs');
+    src:  url('fonts/icomoon.eot?pmpvgs#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pmpvgs') format('truetype'),
+    url('fonts/icomoon.woff?pmpvgs') format('woff'),
+    url('fonts/icomoon.svg?pmpvgs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/*Icons */
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chat_bubble_outline:before {
+    content: "\e901";
+}
+.icon-notifications_none:before {
+    content: "\e902";
+}
+.icon-flash-outline:before {
+    content: "\e903";
+}
+.icon-home:before {
+    content: "\e910";
+}
+.icon-map-pin:before {
+    content: "\e904";
+}
+.icon-youtube:before {
+    content: "\e905";
+}
+.icon-video:before {
+    content: "\e906";
+}
+.icon-shopping-bag:before {
+    content: "\e907";
+}
+.icon-pie-chart:before {
+    content: "\e908";
+}
+.icon-mail:before {
+    content: "\e909";
+}
+.icon-message-square:before {
+    content: "\e90a";
+}
+.icon-settings:before {
+    content: "\e90b";
+}
+.icon-user:before {
+    content: "\e90c";
+}
+.icon-globe:before {
+    content: "\e90d";
+}
+.icon-tv:before {
+    content: "\e90e";
+}
+.icon-badge:before {
+    content: "\e90f";
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import p from './Profile.module.css';
+import p from './Badges.module.css';
 
-const Profile = () => {
+const Badges = () => {
   return (
     <div className={p.profile}>
       <div className={p.profile__img}>img</div>
@@ -14,4 +14,4 @@ const Profile = () => {
   );
 }
 
-export default Profile;
+export default Badges;

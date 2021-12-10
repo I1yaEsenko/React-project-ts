@@ -8,24 +8,26 @@ type SidebarItemPropsType = {
 }
 
 export type ArrayMenu = {
-  id:number
+  id: number
   linkTitle: string
 }
 
 const linksNewFeeds: Array<ArrayMenu> = [
-  {id:0, linkTitle:'NewsFeed'},
-  {id:1, linkTitle:'Badges'},
-  {id:2, linkTitle:'Explore Stories'},
-  {id:3, linkTitle:'Popular Groups'},
-  {id:4, linkTitle:'Author Profile'},
+  {id: 0, linkTitle: 'News Feed'},
+  {id: 1, linkTitle: 'Badges'},
+  {id: 2, linkTitle: 'Explore Stories'},
+  {id: 3, linkTitle: 'Popular Groups'},
+  {id: 4, linkTitle: 'Author Author'},
 ]
 
-const Feeds = (props:SidebarItemPropsType) => {
+const Feeds = (props: SidebarItemPropsType) => {
   return (
+
     <div className={it.item}>
-    <div className={it.title}>{props.title}</div>
-    <Links  links={linksNewFeeds}/>
+      <div className={it.title}>{props.title}</div>
+        <Links links={linksNewFeeds}/>
     </div>
+
   );
 }
 
