@@ -10,6 +10,9 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Explore from "./components/Sidebar/Feeds/Feeds.links/Explore/Explore";
 import Popular from "./components/Sidebar/Feeds/Feeds.links/Popular/Popular";
 import Author from "./components/Sidebar/Feeds/Feeds.links/Author/Author";
+import Settings from "./components/Sidebar/Account/Account.links/Settings/Settings";
+import Chat from "./components/Sidebar/Account/Account.links/Chat/Chat";
+import Analytics from "./components/Sidebar/Account/Account.links/Analytics/Analytics";
 
 function App() {
   return (
@@ -24,6 +27,13 @@ function App() {
             <Route path='/explore' element={<Explore/>}/>
             <Route path='/popular' element={<Popular/>}/>
             <Route path='/author' element={<Author/>}/>
+          </Routes>
+        </div>
+        <div className='container'>
+          <Routes>
+            <Route path='/settings' element={<Settings/>}/>
+            <Route path='/chat' element={<Chat/>}/>
+            <Route path='/analytics' element={<Analytics/>}/>
           </Routes>
         </div>
         <Contacts/>

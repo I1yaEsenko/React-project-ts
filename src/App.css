@@ -97,3 +97,28 @@
 .icon-badge:before {
     content: "\e90f";
 }
+
+.tv {
+    background: linear-gradient(to right, #0575e6, #021b79);
+}
+
+.badge {
+    background: linear-gradient(to right, #e44d26, #f16529);
+}
+
+.earth {
+    background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.light {
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+
+.man {
+    background: linear-gradient(135deg, #05f, #09f);
+}
+
+.none{
+    color: #c3c3c3!important;
+    margin: 0!important;
+}

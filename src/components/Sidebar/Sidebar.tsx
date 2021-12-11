@@ -10,7 +10,7 @@ const Sidebar = () => {
     <aside className={sb.sidebar}>
       <Feeds title={'New Feeds'}/>
       {/*<Pages title={'More Pages'}/>*/}
-      {/*<Account title={'Account'}/>*/}
+      <Account title={'Account'}/>
     </aside>
   );
 }
