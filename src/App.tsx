@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
-import Sidebar, {ArrayMenu} from "./components/Sidebar/Sidebar";
 import Badges from "./components/Sidebar/Feeds/Feeds.links/Badges/Badges";
-import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
 import News from "./components/Sidebar/Feeds/Feeds.links/News/News";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
@@ -13,19 +11,21 @@ import Author from "./components/Sidebar/Feeds/Feeds.links/Author/Author";
 import Settings from "./components/Sidebar/Account/Account.links/Settings/Settings";
 import Chat from "./components/Sidebar/Account/Account.links/Chat/Chat";
 import Analytics from "./components/Sidebar/Account/Account.links/Analytics/Analytics";
+import {ArrayMenu} from "./index";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 type AppPropsType = {
   linksFeed: Array<ArrayMenu>
+  linksAccount: Array<ArrayMenu>
+  mainMenu: Array<ArrayMenu>
 }
-
-
 
 function App(props: AppPropsType) {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
-        <Header/>
-        <Sidebar linksFeed={props.linksFeed}/>
+        <Header mainMenu={props.mainMenu}/>
+        <Sidebar linksFeed={props.linksFeed} linksAccount={props.linksAccount}/>
         <div className='container'>
           <Routes>
             <Route path='/news' element={<News/>}/>
@@ -39,12 +39,10 @@ function App(props: AppPropsType) {
           </Routes>
         </div>
         <Contacts/>
-        <Footer/>
       </div>
     </BrowserRouter>
 
   );
 }
-
 
 export default App;

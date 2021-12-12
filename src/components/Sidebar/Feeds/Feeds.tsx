@@ -1,7 +1,7 @@
 import React from "react";
 import it from './Feeds.module.css';
 import Link from "../Link/Link";
-import {ArrayMenu} from "../Sidebar";
+import {ArrayMenu} from "../../../index";
 
 type SidebarItemPropsType = {
   title: string
@@ -12,7 +12,7 @@ type SidebarItemPropsType = {
 const Feeds = (props: SidebarItemPropsType) => {
 
   let newLinksElement = props.linksFeed
-    .map(lf => <Link title={lf.linkTitle} pathPage={lf.way} tag={lf.classTag} color={lf.colorTag}/>)
+    .map(lf => <Link title={lf.linkTitle} pathPage={lf.way} class={lf.classTag} tag={lf.iconTag} color={lf.colorTag}/>)
 
   return (
     <div className={it.item}>

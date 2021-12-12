@@ -6,19 +6,6 @@
     align-items: center;
 }
 
-.icon {
-    width: 45px;
-    height: 45px;
-    border-radius: 45px;
-    display: inline-block;
-    line-height: 45px !important;
-    text-align: center;
-    margin-right: 1rem;
-    color: #fff;
-    font-size: 20px;
-}
-
-
 .link {
     text-decoration: none;
     font-size: 15px;
@@ -28,7 +15,11 @@
     font-weight: 600;
 }
 
+
 .link:hover {
     color: #185dca;
 }
 
+.icon:hover{
+
+}
