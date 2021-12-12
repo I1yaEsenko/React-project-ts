@@ -1,16 +1,26 @@
 import React from 'react';
 import sb from './Sidebar.module.css';
-import Pages from "./Item/Pages";
 import Feeds from "./Feeds/Feeds";
 import Account from "./Account/Account";
 
-const Sidebar = () => {
-  return (
 
+export type ArrayMenu = {
+  linkTitle: string
+  way: string
+  classTag:string
+  colorTag:string
+}
+
+type SidebarPropsType = {
+  linksFeed: Array<ArrayMenu>
+}
+
+const Sidebar = (props: SidebarPropsType) => {
+  return (
     <aside className={sb.sidebar}>
-      <Feeds title={'New Feeds'}/>
+      <Feeds title={'New Feeds'} linksFeed={props.linksFeed}/>
       {/*<Pages title={'More Pages'}/>*/}
-      <Account title={'Account'}/>
+      <Account title={'Account'} />
     </aside>
   );
 }

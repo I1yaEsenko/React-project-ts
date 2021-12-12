@@ -1,10 +1,10 @@
 import React from "react";
-import d from './News.module.css';
+import n from './News.module.css';
 
 const News = () => {
   return (
-    <div>
-      News
+    <div className={n.news}>
+      Newss
     </div>
   )
 }
